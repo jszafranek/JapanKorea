@@ -42,25 +42,18 @@ body::before {
     z-index: 0;
 }
 
-/* Header */
+/* HERO: Tokyo */
 header {
-    background: 
-        linear-gradient(135deg, rgba(30, 60, 90, 0.4), rgba(0, 120, 180, 0.3)),
-        url('Cyprus-Island-Background-HD-Wallpapers-95482.jpg') no-repeat;
-    background-size: 140% auto;
-    background-position: center center;
-    color: white;
-    padding: 3rem 1rem;
-    text-align: center;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 10;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.45), rgba(2, 6, 23, 0.35)),
+    url('tokyo-hero.jpg') no-repeat;
+  background-size: cover;          /* wypełnia cały header */
+  background-position: center;     /* trzyma centrum kadru */
+  background-attachment: scroll;   /* lepsza zgodność mobilna niż fixed */
+  min-height: 300px;               /* istniejąca wartość, można 360-420 */
+}
+@media (max-width: 768px) {
+  header { background-position: center center; }
 }
 
 header h1 {
