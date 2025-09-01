@@ -46,7 +46,7 @@ body::before {
 header {
   background:
     linear-gradient(135deg, rgba(15, 23, 42, 0.45), rgba(2, 6, 23, 0.35)),
-    url('tokyo-hero.jpg') no-repeat;
+    url('tokyo-hero.png') no-repeat;
   background-size: cover;          /* wypełnia cały header */
   background-position: center;     /* trzyma centrum kadru */
   background-attachment: scroll;   /* lepsza zgodność mobilna niż fixed */
