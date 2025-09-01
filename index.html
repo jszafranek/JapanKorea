@@ -1,67 +1,637 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Planer Wycieczki Japonia-Korea</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 1em; max-width: 600px; }
-  h1 { text-align: center; }
-  form { margin-bottom: 1em; }
-  label { display: block; margin-top: 0.5em; }
-  input, textarea, button { width: 100%; padding: 0.5em; margin-top: 0.2em; }
-  ul { list-style: none; padding: 0; }
-  li { background: #f0f0f0; margin-bottom: 0.5em; padding: 0.5em; border-radius: 4px; }
-  .date { font-weight: bold; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypr 2025 - Plan Podróży</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Planer Wycieczki Japonia-Korea</h1>
+    <header>
+        <h1>Cypr 2025</h1>
+        <div class="dates">16 - 27 października 2025</div>
+    </header>
+    
+    <!-- Nawigacja desktop -->
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <a href="#plan-podrozy" class="nav-item">
+                <span class="nav-icon">📅</span>
+                <span class="nav-text">Plan Podróży</span>
+            </a>
+            <a href="#mapa" class="nav-item">
+                <span class="nav-icon">🗺️</span>
+                <span class="nav-text">Mapa</span>
+            </a>
+            <a href="#loty" class="nav-item">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Loty</span>
+            </a>
+            <a href="#samochod" class="nav-item">
+                <span class="nav-icon">🚗</span>
+                <span class="nav-text">Wynajem</span>
+            </a>
+            <a href="#noclegi" class="nav-item">
+                <span class="nav-icon">🏨</span>
+                <span class="nav-text">Noclegi</span>
+            </a>
+            <a href="#ubezpieczenie" class="nav-item">
+                <span class="nav-icon">🛡️</span>
+                <span class="nav-text">Ubezpieczenie</span>
+            </a>
+            <a href="#podsumowanie" class="nav-item">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Podsumowanie</span>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Nawigacja mobile -->
+    <nav class="mobile-nav">
+        <a href="#plan-podrozy">📅 Plan</a>
+        <a href="#mapa">🗺️ Mapa</a>
+        <a href="#loty">✈️ Loty</a>
+        <a href="#samochod">🚗 Wynajem</a>
+        <a href="#noclegi">🏨 Noclegi</a>
+        <a href="#ubezpieczenie">🛡️ Ubezp.</a>
+        <a href="#podsumowanie">💰 Koszty</a>
+    </nav>
 
-<form id="activityForm">
-  <label for="date">Data (YYYY-MM-DD)</label>
-  <input type="date" id="date" name="date" required min="2025-09-09" max="2025-09-24" />
-  <label for="activity">Aktywność</label>
-  <textarea id="activity" name="activity" rows="2" required placeholder="Opis aktywności"></textarea>
-  <button type="submit">Dodaj aktywność</button>
-</form>
+    <main>
+        <!-- Sekcja Plan Podróży -->
+        <section id="plan-podrozy" class="section collapsible">
+            <div class="section-header" onclick="toggleSection('plan-podrozy')">
+                <h2>📅 Plan Podróży</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            
+            <!-- Nawigacja po dniach -->
+            <div class="days-navigation">
+                <button class="day-btn active" onclick="showDay(1)">
+                    <span class="day-number">Dzień 1</span>
+                    <span class="day-date">16.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(2)">
+                    <span class="day-number">Dzień 2</span>
+                    <span class="day-date">17.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(3)">
+                    <span class="day-number">Dzień 3</span>
+                    <span class="day-date">18.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(4)">
+                    <span class="day-number">Dzień 4</span>
+                    <span class="day-date">19.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(5)">
+                    <span class="day-number">Dzień 5</span>
+                    <span class="day-date">20.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(6)">
+                    <span class="day-number">Dzień 6</span>
+                    <span class="day-date">21.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(7)">
+                    <span class="day-number">Dzień 7</span>
+                    <span class="day-date">22.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(8)">
+                    <span class="day-number">Dzień 8</span>
+                    <span class="day-date">23.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(9)">
+                    <span class="day-number">Dzień 9</span>
+                    <span class="day-date">24.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(10)">
+                    <span class="day-number">Dzień 10</span>
+                    <span class="day-date">25.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(11)">
+                    <span class="day-number">Dzień 11</span>
+                    <span class="day-date">26.10</span>
+                </button>
+                <button class="day-btn" onclick="showDay(12)">
+                    <span class="day-number">Dzień 12</span>
+                    <span class="day-date">27.10</span>
+                </button>
+            </div>
 
-<ul id="activitiesList"></ul>
+            <!-- Zawartość dni -->
+            <div class="day-content" id="day-1">
+                <div class="day-header">
+                    <h3>Dzień 1 - Czwartek, 16 października</h3>
+                    <p class="day-subtitle">Przylot do Larnaki – Święte Historie i Słone Jeziora</p>
+                    <span class="day-location">📍 Baza: Larnaka</span>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:50</div>
+                        <div class="timeline-content">
+                            <h4>✈️ Wylot z Warszawy</h4>
+                            <p>Lot Wizz Air W6 1551 do Larnaki</p>
+                            <span class="duration">Czas lotu: 3h 25min</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time">11:15</div>
+                        <div class="timeline-content">
+                            <h4>🛬 Przylot na Cypr</h4>
+                            <p>Lotnisko Larnaka, odbiór samochodu, zakwaterowanie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item highlight-piotr">
+                        <div class="timeline-time">15:00</div>
+                        <div class="timeline-content">
+                            <h4>⛪ Kościół św. Łazarza</h4>
+                            <p>IX-wieczny kościół bizantyjski, grób Łazarza</p>
+                            <span class="tag">Dla Piotra: Fotografia</span>
+                            <div class="activity-details">
+                                <span>📍 Centrum Larnaki</span>
+                                <span>⏱️ 1-1.5h</span>
+                                <span>🎫 Wstęp wolny</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time">17:00</div>
+                        <div class="timeline-content">
+                            <h4>🌅 Słone Jezioro i Meczet Hala Sultan Tekke</h4>
+                            <p>Spacer o złotej godzinie, możliwość zobaczenia flamingów</p>
+                            <span class="tag">Idealne światło do fotografii</span>
+                            <div class="activity-details">
+                                <span>📍 4km od centrum</span>
+                                <span>⏱️ 1.5h</span>
+                                <span>🎫 Wstęp wolny</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time">19:30</div>
+                        <div class="timeline-content">
+                            <h4>🍽️ Kolacja - To Arxontikon</h4>
+                            <p>Tradycyjne cypryjskie meze w historycznym budynku</p>
+                            <div class="activity-details">
+                                <span>📍 Promenada Finikoudes</span>
+                                <span>💰 ~25-30€/os</span>
+                                <span>📞 Rezerwacja zalecana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<script>
-  const form = document.getElementById('activityForm');
-  const activitiesList = document.getElementById('activitiesList');
+            <!-- Pozostałe dni (ukryte) -->
+            <div class="day-content" id="day-2" style="display: none;">
+                <div class="day-header">
+                    <h3>Dzień 2 - Piątek, 17 października</h3>
+                    <p class="day-subtitle">Rozbieżne Ścieżki – Rzemieślnicze Wzgórza i Nadmorskie Klify</p>
+                    <span class="day-location">📍 Baza: Larnaka</span>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item highlight-piotr">
+                        <div class="timeline-time">09:00</div>
+                        <div class="timeline-content">
+                            <h4>🏘️ [Piotr] Wioska Pano Lefkara</h4>
+                            <p>Tradycyjne koronki i srebrna biżuteria, UNESCO</p>
+                            <span class="tag">Kultura i Fotografia</span>
+                            <div class="activity-details">
+                                <span>📍 40min jazdy</span>
+                                <span>⏱️ 3-4h</span>
+                                <span>🎫 Muzeum ~2€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item highlight-krzysztof">
+                        <div class="timeline-time">09:00</div>
+                        <div class="timeline-content">
+                            <h4>🥾 [Krzysztof] Park Narodowy Cape Greco</h4>
+                            <p>Szlaki piesze, jaskinie morskie, Most Miłości</p>
+                            <span class="tag">Aktywność i Przygoda</span>
+                            <div class="activity-details">
+                                <span>📍 45min jazdy</span>
+                                <span>⏱️ 4-5h</span>
+                                <span>🎫 Wstęp wolny</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time">19:00</div>
+                        <div class="timeline-content">
+                            <h4>🍽️ Kolacja - Mpoukia Kai Goulia</h4>
+                            <p>Autentyczne meze, często z muzyką na żywo</p>
+                            <div class="activity-details">
+                                <span>📍 Larnaka</span>
+                                <span>💰 ~20-25€/os</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  let activities = JSON.parse(localStorage.getItem('travelActivities')) || [];
+            </div>
+        </section>
 
-  function saveActivities() {
-    localStorage.setItem('travelActivities', JSON.stringify(activities));
-  }
+        <!-- Mapa -->
+        <section id="mapa" class="section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('mapa')">
+                <h2>🗺️ Trasa Podróży</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <p style="font-size: 0.85rem; color: #7f8c8d; margin-bottom: 0.5rem;">
+                💡 Kliknij na mapę aby włączyć nawigację
+            </p>
+            <div id="map"></div>
+            <div class="route-summary">
+                <p><strong>Start:</strong> Lotnisko Larnaka (16.10.2025)</p>
+                <p><strong>Koniec:</strong> Lotnisko Pafos (27.10.2025)</p>
+                <p><strong>Planowany dystans:</strong> ~1200 km</p>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="openGoogleMaps()">
+                    🗺️ Otwórz w Google Maps
+                </button>
+                <button class="action-btn" onclick="openAttractions()">
+                    🏛️ Atrakcje turystyczne
+                </button>
+                <button class="action-btn" onclick="openRouteDetails()">
+                    📍 Szczegółowa trasa
+                </button>
+            </div>
+            </div>
+        </section>
 
-  function renderActivities() {
-    activitiesList.innerHTML = '';
-    activities.sort((a,b) => a.date.localeCompare(b.date));
-    activities.forEach(({ date, activity }) => {
-      const li = document.createElement('li');
-      li.innerHTML = '<span class="date">' + date + '</span>: ' + activity;
-      activitiesList.appendChild(li);
-    });
-  }
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const date = form.date.value;
-    const activity = form.activity.value.trim();
-    if(date && activity) {
-      activities.push({date, activity});
-      saveActivities();
-      renderActivities();
-      form.reset();
-    }
-  });
+        <!-- Sekcja Loty -->
+        <section id="loty" class="section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('loty')">
+                <h2>✈️ Loty</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <div class="flights-container">
+                <div class="flight-card">
+                    <h3>Lot tam - 16 października 2025 (czwartek)</h3>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <span class="airport-code">WAW</span>
+                                <span class="airport-name">Warszawa Chopin</span>
+                                <span class="flight-time">06:50</span>
+                            </div>
+                            <div class="flight-arrow">→</div>
+                            <div class="airport">
+                                <span class="airport-code">LCA</span>
+                                <span class="airport-name">Larnaka</span>
+                                <span class="flight-time">11:15</span>
+                            </div>
+                        </div>
+                        <div class="flight-info">
+                            <p><strong>Przewoźnik:</strong> Wizz Air</p>
+                            <p><strong>Nr lotu:</strong> W6 1551</p>
+                            <p><strong>Czas lotu:</strong> 3h 25min</p>
+                            <p><strong>Miejsca:</strong> 7E, 7F</p>
+                            <p><strong>Bagaż:</strong> WIZZ Priority + bagaż podręczny</p>
+                            <p class="flight-price"><strong>Cena (2 osoby):</strong> <span class="price-value">1014 zł</span></p>
+                        </div>
+                        <button class="ticket-btn" onclick="toggleTickets('departure')">
+                            🎫 Pokaż bilety
+                        </button>
+                    </div>
+                    <div class="tickets-details" id="departure-tickets" style="display: none;">
+                        <div class="ticket-info">
+                            <h4>Szczegóły biletów:</h4>
+                            <ul>
+                                <li>Pasażer 1: Miejsce 7E</li>
+                                <li>Pasażer 2: Miejsce 7F</li>
+                                <li>Taryfa: WIZZ Smart</li>
+                                <li>Opłata administracyjna: 76 zł</li>
+                                <li>Status: Opłacone ✅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-  renderActivities();
-</script>
+                <div class="flight-card">
+                    <h3>Lot powrotny - 27 października 2025 (poniedziałek)</h3>
+                    <div class="flight-details">
+                        <div class="flight-route">
+                            <div class="airport">
+                                <span class="airport-code">PFO</span>
+                                <span class="airport-name">Pafos</span>
+                                <span class="flight-time">15:45</span>
+                            </div>
+                            <div class="flight-arrow">→</div>
+                            <div class="airport">
+                                <span class="airport-code">WAW</span>
+                                <span class="airport-name">Warszawa Chopin</span>
+                                <span class="flight-time">18:15</span>
+                            </div>
+                        </div>
+                        <div class="flight-info">
+                            <p><strong>Przewoźnik:</strong> Ryanair</p>
+                            <p><strong>Nr lotu:</strong> FR5880</p>
+                            <p><strong>Czas lotu:</strong> 2h 30min</p>
+                            <p><strong>Bagaż:</strong> Priority + 2x 10kg bagaż rejestrowany</p>
+                            <p class="flight-price"><strong>Cena (2 osoby):</strong> <span class="price-value">1150 zł</span></p>
+                        </div>
+                        <button class="ticket-btn" onclick="toggleTickets('return')">
+                            🎫 Pokaż bilety
+                        </button>
+                    </div>
+                    <div class="tickets-details" id="return-tickets" style="display: none;">
+                        <div class="ticket-info">
+                            <h4>Szczegóły biletów:</h4>
+                            <ul>
+                                <li>Pasażer 1: Miejsce do wyboru</li>
+                                <li>Pasażer 2: Miejsce do wyboru</li>
+                                <li>Taryfa: Regular + Priority</li>
+                                <li>Bagaż rejestrowany: 2x 10kg</li>
+                                <li>Status: Opłacone ✅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-total">
+                <span>Suma za loty:</span>
+                <span class="total-price">2164 zł</span>
+            </div>
+            </div>
+        </section>
 
+        <!-- Sekcja Wynajem Samochodu -->
+        <section id="samochod" class="section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('samochod')">
+                <h2>🚗 Wynajem Samochodu</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <div class="rental-card">
+                <div class="rental-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Firma</div>
+                            <div class="info-value"><span class="editable" data-field="rental-company">Do uzupełnienia</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Model samochodu</div>
+                            <div class="info-value"><span class="editable" data-field="car-model">Do uzupełnienia</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Odbiór</div>
+                            <div class="info-value"><span class="editable" data-field="pickup-location">Lotnisko Larnaka, 16.10.2025, 12:00</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Zwrot</div>
+                            <div class="info-value"><span class="editable" data-field="return-location">Lotnisko Pafos, 27.10.2025, 14:00</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Pakiet</div>
+                            <div class="info-value"><span class="editable" data-field="rental-package">Pełne ubezpieczenie CDW + TP</span></div>
+                        </div>
+                    </div>
+                    <p class="item-price"><strong>Cena wynajmu (11 dni):</strong> <span class="price-value" data-price="0">0 zł</span></p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="openRentalContract()">
+                    📄 Umowa wynajmu
+                </button>
+                <button class="action-btn" onclick="openDrivingTips()">
+                    🚗 Jazda na Cyprze
+                </button>
+            </div>
+            <div class="section-total">
+                <span>Suma za wynajem:</span>
+                <span class="total-price" id="rental-total">0 zł</span>
+            </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Noclegi -->
+        <section id="noclegi" class="section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('noclegi')">
+                <h2>🏨 Noclegi</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <div class="accommodation-list">
+                <div class="accommodation-card">
+                    <div class="accommodation-info">
+                        <h3>Nocleg 1</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Hotel/Apartament</div>
+                                <div class="info-value"><span class="editable" data-field="hotel1-name">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Lokalizacja</div>
+                                <div class="info-value"><span class="editable" data-field="hotel1-location">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Data</div>
+                                <div class="info-value"><span class="editable" data-field="hotel1-dates">16-20.10.2025 (4 noce)</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Typ pokoju</div>
+                                <div class="info-value"><span class="editable" data-field="hotel1-room">Do uzupełnienia</span></div>
+                            </div>
+                        </div>
+                        <p class="item-price"><strong>Cena:</strong> <span class="price-value" data-price="0">0 zł</span></p>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="action-btn primary" onclick="showHotelDetails(1)">📧 Potwierdzenie</button>
+                        <button class="action-btn primary" onclick="showHotelOnMap(1)">📍 Mapa</button>
+                        <button class="action-btn primary" onclick="showHotelInstructions(1)">📋 Instrukcje</button>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-info">
+                        <h3>Nocleg 2</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Hotel/Apartament</div>
+                                <div class="info-value"><span class="editable" data-field="hotel2-name">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Lokalizacja</div>
+                                <div class="info-value"><span class="editable" data-field="hotel2-location">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Data</div>
+                                <div class="info-value"><span class="editable" data-field="hotel2-dates">20-23.10.2025 (3 noce)</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Typ pokoju</div>
+                                <div class="info-value"><span class="editable" data-field="hotel2-room">Do uzupełnienia</span></div>
+                            </div>
+                        </div>
+                        <p class="item-price"><strong>Cena:</strong> <span class="price-value" data-price="0">0 zł</span></p>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="action-btn primary" onclick="showHotelDetails(2)">📧 Potwierdzenie</button>
+                        <button class="action-btn primary" onclick="showHotelOnMap(2)">📍 Mapa</button>
+                        <button class="action-btn primary" onclick="showHotelInstructions(2)">📋 Instrukcje</button>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-info">
+                        <h3>Nocleg 3</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Hotel/Apartament</div>
+                                <div class="info-value"><span class="editable" data-field="hotel3-name">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Lokalizacja</div>
+                                <div class="info-value"><span class="editable" data-field="hotel3-location">Do uzupełnienia</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Data</div>
+                                <div class="info-value"><span class="editable" data-field="hotel3-dates">23-27.10.2025 (4 noce)</span></div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Typ pokoju</div>
+                                <div class="info-value"><span class="editable" data-field="hotel3-room">Do uzupełnienia</span></div>
+                            </div>
+                        </div>
+                        <p class="item-price"><strong>Cena:</strong> <span class="price-value" data-price="0">0 zł</span></p>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="action-btn primary" onclick="showHotelDetails(3)">📧 Potwierdzenie</button>
+                        <button class="action-btn primary" onclick="showHotelOnMap(3)">📍 Mapa</button>
+                        <button class="action-btn primary" onclick="showHotelInstructions(3)">📋 Instrukcje</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-total">
+                <span>Suma za noclegi:</span>
+                <span class="total-price" id="accommodation-total">0 zł</span>
+            </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Ubezpieczenie -->
+        <section id="ubezpieczenie" class="section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('ubezpieczenie')">
+                <h2>🛡️ Ubezpieczenie</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <div class="insurance-card">
+                <div class="insurance-info">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Ubezpieczyciel</div>
+                            <div class="info-value"><span class="editable" data-field="insurance-company">Do uzupełnienia</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Numer polisy</div>
+                            <div class="info-value"><span class="editable" data-field="policy-number">Do uzupełnienia</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Zakres</div>
+                            <div class="info-value"><span class="editable" data-field="coverage">KL + NNW + bagaż + OC</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Okres</div>
+                            <div class="info-value"><span class="editable" data-field="insurance-period">16.10.2025 - 27.10.2025</span></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Osoby ubezpieczone</div>
+                            <div class="info-value"><span class="editable" data-field="insured-persons">2 osoby dorosłe</span></div>
+                        </div>
+                    </div>
+                    <p class="item-price"><strong>Cena ubezpieczenia (2 osoby, 11 dni):</strong> <span class="price-value" data-price="0">0 zł</span></p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="openInsurancePolicy()">
+                    📋 Polisa ubezpieczenia
+                </button>
+                <button class="action-btn" onclick="openEmergencyContacts()">
+                    🆘 Kontakty alarmowe
+                </button>
+                <button class="action-btn" onclick="openClaimForm()">
+                    📝 Formularz szkody
+                </button>
+            </div>
+            <div class="section-total">
+                <span>Suma za ubezpieczenie:</span>
+                <span class="total-price" id="insurance-total">0 zł</span>
+            </div>
+            </div>
+        </section>
+
+        <!-- Podsumowanie kosztów -->
+        <section id="podsumowanie" class="section summary-section collapsible collapsed">
+            <div class="section-header" onclick="toggleSection('podsumowanie')">
+                <h2>💰 Podsumowanie Kosztów</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="section-content">
+            <div class="cost-summary">
+                <div class="cost-item">
+                    <span class="cost-label">✈️ Loty (2 osoby):</span>
+                    <span class="cost-value" id="summary-flights">2164 zł</span>
+                </div>
+                <div class="cost-item">
+                    <span class="cost-label">🚗 Wynajem samochodu (11 dni):</span>
+                    <span class="cost-value" id="summary-rental">0 zł</span>
+                </div>
+                <div class="cost-item">
+                    <span class="cost-label">🏨 Noclegi (11 nocy):</span>
+                    <span class="cost-value" id="summary-accommodation">0 zł</span>
+                </div>
+                <div class="cost-item">
+                    <span class="cost-label">🛡️ Ubezpieczenie (2 osoby):</span>
+                    <span class="cost-value" id="summary-insurance">0 zł</span>
+                </div>
+                <div class="cost-item additional">
+                    <span class="cost-label">🍽️ Wyżywienie (szacunkowo):</span>
+                    <span class="cost-value" id="food-budget">0 zł</span>
+                </div>
+                <div class="cost-item additional">
+                    <span class="cost-label">⛽ Paliwo (szacunkowo):</span>
+                    <span class="cost-value" id="fuel-budget">0 zł</span>
+                </div>
+                <div class="cost-item additional">
+                    <span class="cost-label">🎫 Atrakcje i bilety:</span>
+                    <span class="cost-value" id="attractions-budget">0 zł</span>
+                </div>
+                <div class="cost-total">
+                    <span class="total-label">SUMA CAŁKOWITA:</span>
+                    <span class="total-value" id="grand-total">2164 zł</span>
+                </div>
+                <div class="cost-per-person">
+                    <span class="per-person-label">Na osobę:</span>
+                    <span class="per-person-value" id="per-person-total">1082 zł</span>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cypr 2025 - Nasza Przygoda 🌊</p>
+        <button onclick="window.print()" class="print-btn">🖨️ Drukuj / Zapisz PDF</button>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

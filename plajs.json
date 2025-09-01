@@ -1,0 +1,919 @@
+{
+  "trip_info": {
+    "destination": "Cypr",
+    "start_date": "2025-10-16",
+    "end_date": "2025-10-27",
+    "total_days": 12,
+    "bases": [
+      {
+        "name": "Baza Wschodnia: Larnaka",
+        "location": "Okolice Cerkwi św. Łazarza",
+        "days": "1-3"
+      },
+      {
+        "name": "Baza Górska: Troodos",
+        "location": "Wioska Kakopetria",
+        "days": "4-5"
+      },
+      {
+        "name": "Baza Zachodnia: Pafos",
+        "location": "Rejon Grobowców Królów",
+        "days": "6-12"
+      }
+    ]
+  },
+  "days": [
+    {
+      "day_number": 1,
+      "date": "2025-10-16",
+      "day_name": "Czwartek",
+      "title": "Przylot do Krainy Afrodyty",
+      "day_theme": "Aklimatyzacja i pierwszy kontakt z cypryjskim klimatem",
+      "summary": {
+        "overview": "To dzień organizacyjny, skupiony na spokojnym wejściu w rytm podróży. Po przylocie i załatwieniu formalności związanych z samochodem, celem jest zameldowanie się w Larnace i spędzenie relaksującego wieczoru nad morzem, aby poczuć atmosferę wyspy.",
+        "logistics": "Głównym zadaniem logistycznym jest sprawny odbiór samochodu i bezstresowy dojazd do hotelu. Pamiętajcie o ruchu lewostronnym – pierwsze kilometry warto pokonać ze wzmożoną uwagą, szczególnie na rondach."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "10 km",
+        "total_driving_time": "0h 20min",
+        "description": "Minimalna ilość jazdy, głównie transfer z lotniska do hotelu. Wieczorem samochód jest już zaparkowany, a po centrum można poruszać się pieszo.",
+        "parking_spots": [
+          "Parkingi publiczne w okolicy Cerkwi św. Łazarza (część jest bezpłatna)"
+        ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "11:15",
+          "title": "Przylot i odbiór samochodu (LCA)",
+          "description": "Po przylocie i odbiorze bagażu, pierwszym krokiem jest finalizacja formalności w wypożyczalni. To kluczowy moment, od którego zaczyna się Wasza niezależna podróż po wyspie.",
+          "tags": ["transport", "logistyka"],
+          "duration": "1h 45min",
+          "location": {
+            "name": "Larnaca International Airport (LCA)",
+            "distance": "0 km od bazy",
+            "coordinates": {
+              "lat": 34.8751,
+              "lng": 33.6249
+            }
+          },
+          "details": { "booking": "wymagana" },
+          "tips": [
+            "Przed odjazdem dokładnie obejrzyj samochód i zrób zdjęcia ewentualnych istniejących uszkodzeń (rysy, wgniecenia).",
+            "Zapytaj w wypożyczalni o zasady dotyczące paliwa (zwykle full-to-full) i upewnij się, jaki rodzaj paliwa jest wymagany."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "13:00",
+          "from": "Lotnisko w Larnace",
+          "to": "Baza noclegowa w Larnace",
+          "duration": "0h 15min",
+          "distance": "8 km",
+          "description": "Krótki przejazd z lotniska do serca Larnaki. To Wasz pierwszy test jazdy po lewej stronie drogi.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "13:15",
+          "title": "Zakwaterowanie w Larnace",
+          "description": "Zameldowanie w miejscu noclegowym w okolicy Cerkwi św. Łazarza i chwila na odświeżenie się po podróży.",
+          "tags": ["nocleg", "relaks"],
+          "duration": "1h 45min",
+          "location": { "name": "Okolice Cerkwi św. Łazarza", "distance": "8 km od bazy", "coordinates": { "lat": 34.9125, "lng": 33.6349 } },
+          "details": null, "tips": [], "alternatives": []
+        },
+        {
+          "type": "activity",
+          "time": "17:00",
+          "title": "Spacer po promenadzie Finikoudes",
+          "description": "Spokojny, wieczorny spacer wzdłuż nadmorskiej promenady obsadzonej palmami. To doskonała okazja, by poczuć atmosferę miasta, obserwując codzienne życie mieszkańców i turystów na tle morza i piaszczystej plaży.",
+          "tags": ["spacer", "miasto", "plaża", "fotografia", "zachód słońca"],
+          "duration": "2h 0min",
+          "location": { "name": "Promenada Finikoudes", "distance": "1 km od bazy", "coordinates": { "lat": 34.9145, "lng": 33.6377 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [
+            "Zatrzymaj się na chwilę przy niewielkim forcie na końcu promenady.",
+            "Światło podczas złotej godziny jest idealne do robienia nastrojowych zdjęć palm i morza."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "Brak (dzień przylotu)", "description": null },
+        "lunch": { "place": "Przekąska na lotnisku lub w piekarni", "description": "Po drodze do hotelu warto zatrzymać się w lokalnej piekarni (np. Zorbas) po coś na szybko – np. tiropitę (ciasto z serem) lub eliopitę (z oliwkami)." },
+        "dinner": { "place": "To Arxontikon", "description": "Idealne miejsce na pierwszą kolację (dostępne pieszo z Waszej bazy). Zamówcie 'meze' – to zestaw kilkunastu małych dań, który pozwoli Wam spróbować przekroju cypryjskiej kuchni." }
+      }
+    },
+    {
+      "day_number": 2,
+      "date": "2025-10-17",
+      "day_name": "Piątek",
+      "title": "Historia, natura i spektakularne klify",
+      "day_theme": "Odkrywanie kontrastów: od starożytnej historii po surowe piękno natury",
+      "summary": {
+        "overview": "Dzień poświęcony na odkrycie najważniejszych punktów Larnaki – duchowego centrum w postaci Cerkwi św. Łazarza oraz cudu natury, jakim jest Słone Jezioro. Popołudnie to podróż na wschodnie wybrzeże, aby doświadczyć dzikiej przyrody i jednego z najpiękniejszych zachodów słońca na Cyprze w Parku Narodowym Cape Greco. Wieczorem powrót do bazy na kolację.",
+        "logistics": "Dzień z umiarkowaną ilością jazdy samochodem. Rano poruszanie się po Larnace (krótkie dystanse), a po południu dłuższy przejazd na wschodnie wybrzeże. Kluczowy jest powrót do bazy przed wieczornym wyjściem."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "115 km",
+        "total_driving_time": "1h 50min",
+        "description": "Krótkie przejazdy po Larnace oraz dłuższa wycieczka na wschodnie wybrzeże i z powrotem. Drogi są dobrej jakości.",
+        "parking_spots": [ "Parking przy Cerkwi św. Łazarza", "Parking przy Słonym Jeziorze", "Bezpłatne parkingi na terenie Parku Narodowego Cape Greco" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "09:30",
+          "title": "Wizyta w Cerkwi św. Łazarza",
+          "description": "Zwiedzanie jednego z najważniejszych zabytków sakralnych na Cyprze. Cerkiew, zbudowana na grobowcu Łazarza wskrzeszonego przez Jezusa, zachwyca kamienną fasadą i bogato zdobionym, barokowym ikonostasem. To miejsce pełne duchowości i historii.",
+          "tags": ["zwiedzanie", "sztuka bizantyjska", "historia", "architektura"],
+          "duration": "1h 0min",
+          "location": { "name": "Cerkiew św. Łazarza", "distance": "0 km od bazy", "coordinates": { "lat": 34.9125, "lng": 33.6349 } },
+          "details": { "cost": "Wstęp wolny (mile widziane datki)", "difficulty": "łatwe", "opening_hours": "08:00-12:30, 14:30-17:30" },
+          "tips": [
+            "Pamiętaj o odpowiednim stroju (zakryte ramiona i kolana).",
+            "Zejdź do podziemi, aby zobaczyć grobowiec św. Łazarza."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "10:30",
+          "from": "Cerkiew św. Łazarza",
+          "to": "Słone Jezioro",
+          "duration": "0h 15min",
+          "distance": "5 km",
+          "description": "Krótki przejazd przez miasto w kierunku lotniska.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "10:45",
+          "title": "Spacer nad Słonym Jeziorem i Meczet Hala Sultan Tekke",
+          "description": "Spacer brzegiem Słonego Jeziora, które jesienią i zimą staje się domem dla tysięcy flamingów. Na jego brzegu, w oazie palm, znajduje się malowniczo położony Meczet Hala Sultan Tekke - jedno z najważniejszych miejsc pielgrzymkowych dla muzułmanów.",
+          "tags": ["spacer", "natura", "obserwacja ptaków", "fotografia"],
+          "duration": "1h 30min",
+          "location": { "name": "Larnaca Salt Lake", "distance": "5 km od bazy", "coordinates": { "lat": 34.891, "lng": 33.619 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [
+            "Najlepsze kadry fotograficzne uchwycisz z punktów widokowych przy drodze z lotniska. Warto zabrać lornetkę do obserwacji ptaków.",
+            "Wstęp do meczetu jest możliwy poza godzinami modlitw, należy pamiętać o odpowiednim ubiorze."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "15:00",
+          "from": "Larnaka",
+          "to": "Cape Greco",
+          "duration": "0h 50min",
+          "distance": "52 km",
+          "description": "Przejazd autostradą A3 w kierunku Ayia Napa. Trasa jest szybka i wygodna.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "15:50",
+          "title": "Eksploracja i zachód słońca na Cape Greco",
+          "description": "Wizyta w Parku Narodowym Cape Greco to obowiązkowy punkt dla miłośników natury i fotografii. Teren ten słynie z surowych, skalistych krajobrazów, morskich jaskiń i krystalicznie czystej wody. Celem jest spacer po klifach i znalezienie idealnego miejsca do podziwiania zachodu słońca nad morzem.",
+          "tags": ["trekking", "natura", "fotografia", "przygoda", "widoki", "zachód słońca"],
+          "duration": "2h 30min",
+          "location": { "name": "Sea Caves, Cape Greco", "distance": "52 km od bazy", "coordinates": { "lat": 34.9625, "lng": 34.0678 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "średnie" },
+          "tips": [
+            "Koniecznie zabierz wygodne buty o dobrej przyczepności. Teren jest nierówny i kamienisty.",
+            "Najsłynniejszy widok to skalny most miłości (Kamara tou Koraka), który wygląda zjawiskowo o zachodzie słońca.",
+            "Sprawdź dokładną godzinę zachodu słońca, aby być na miejscu z odpowiednim wyprzedzeniem."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "Lokalna piekarnia", "description": "Cypryjska kawa i świeże wypieki w jednej z licznych piekarni to świetny start dnia." },
+        "lunch": { "place": "Zephyros Restaurant", "description": "Położona w porcie rybackim restauracja słynąca ze świeżych ryb i owoców morza. Zamówcie talerz rybny dla dwojga." },
+        "dinner": { "place": "Stou Roussia w Larnace", "description": "Po powrocie z Cape Greco i zaparkowaniu samochodu, udajcie się do tej klimatycznej tawerny w centrum. Oferuje doskonałe meze w pięknym otoczeniu starego domu." }
+      }
+    },
+    {
+      "day_number": 3,
+      "date": "2025-10-18",
+      "day_name": "Sobota",
+      "title": "Sztuka, relaks lub tradycyjne rzemiosło",
+      "day_theme": "Dzień wyboru: nowoczesne wybrzeże lub autentyczne serce wyspy",
+      "summary": {
+        "overview": "To elastyczny dzień, który można spędzić na dwa sposoby. Główny plan zakłada eksplorację nowoczesnej sztuki i relaks na jednej z najpiękniejszych plaż Europy. Alternatywa to podróż w głąb lądu do wioski Lefkara, aby zanurzyć się w świecie tradycyjnego rzemiosła, fotografii i spokojnego, wiejskiego życia.",
+        "logistics": "Oba warianty wymagają podobnej ilości jazdy samochodem. Wybór zależy wyłącznie od Waszych preferencji – czy wolicie energię i błękit wybrzeża, czy ciszę i autentyczność górskiej wioski. Dzień kończy się powrotem do bazy w Larnace."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "120 km (wariant plażowy) lub 75 km (wariant Lefkara)",
+        "total_driving_time": "1h 50min (wariant plażowy) lub 1h 20min (wariant Lefkara)",
+        "description": "Przejazd autostradą w kierunku wschodniego wybrzeża lub malowniczymi drogami w głąb lądu. Oba warianty są łatwe nawigacyjnie.",
+        "parking_spots": [ "Parking przy Parku Rzeźb", "Parkingi przy plażach (mogą być płatne)", "Bezpłatne parkingi w Lefkarze" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Główna opcja: Eksploracja Parku Rzeźb w Ayia Napa",
+          "description": "Wizyta w niezwykłej galerii sztuki na świeżym powietrzu. Spacerując wśród kilkudziesięciu rzeźb artystów z całego świata, można podziwiać, jak sztuka współgra z naturalnym krajobrazem i widokiem na morze.",
+          "tags": ["zwiedzanie", "sztuka nowoczesna", "fotografia", "natura"],
+          "duration": "1h 30min",
+          "location": { "name": "Ayia Napa Sculpture Park", "distance": "50 km od bazy", "coordinates": { "lat": 34.9822, "lng": 34.0152 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [ "Najlepiej odwiedzić to miejsce rano, aby uniknąć tłumów i najsilniejszego słońca. Obok znajduje się również park kaktusów." ],
+          "alternatives": [
+            {
+              "name": "Alternatywa całodniowa: Wycieczka do Lefkary",
+              "reason": "Jeśli wolicie spokojniejszy dzień skupiony na kulturze, rzemiośle i fotografii, Lefkara jest idealnym wyborem. To jedna z najpiękniejszych wiosek na Cyprze, słynąca z koronek i srebra. Zamiast plaży, oferuje autentyczne doświadczenie, wąskie, kamienne uliczki i możliwość obserwacji rzemieślników przy pracy. To opcja, która całkowicie zmienia charakter dnia na bardziej artystyczny i kontemplacyjny."
+            }
+          ]
+        },
+        {
+          "type": "travel",
+          "time": "11:30",
+          "from": "Park Rzeźb",
+          "to": "Fig Tree Bay",
+          "duration": "0h 15min",
+          "distance": "8 km",
+          "description": "Krótki przejazd wzdłuż wybrzeża z Ayia Napa do Protaras.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "11:45",
+          "title": "Główna opcja: Relaks na plaży Fig Tree Bay",
+          "description": "Czas na odpoczynek na jednej z najpiękniejszych i najlepiej ocenianych plaż w Europie. Złoty piasek, spokojna, krystalicznie czysta woda i malownicza wysepka, do której można dopłynąć wpław, tworzą idealne warunki do relaksu, pływania i snorkelingu.",
+          "tags": ["relaks", "plaża", "pływanie", "natura"],
+          "duration": "3h 0min",
+          "location": { "name": "Fig Tree Bay, Protaras", "distance": "58 km od bazy", "coordinates": { "lat": 35.013, "lng": 34.057 } },
+          "details": { "cost": "Wstęp wolny (płatne leżaki i parasole)", "difficulty": "łatwe" },
+          "tips": [
+            "Warto zabrać maskę do snorkelingu - przy skałach można obserwować bogate życie morskie.",
+            "Jeśli szukacie jeszcze spokojniejszego miejsca, pobliska zatoka Konnos Bay jest równie piękna, ale często mniej zatłoczona."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Spokojne śniadanie przed wyruszeniem na całodniową wycieczkę." },
+        "lunch": { "place": "Bar na plaży (wariant plażowy) / Tawerna w Lefkarze (wariant alternatywny)", "description": "Wariant A: Lekki lunch w jednym z barów przy Fig Tree Bay. Wariant B: Tradycyjny lunch w rodzinnej tawernie w Lefkarze, np. 'Tasties'." },
+        "dinner": { "place": "Militzis w Larnace", "description": "Po powrocie do Larnaki i zostawieniu samochodu, warto odwiedzić tę legendarną restaurację, aby spróbować tradycyjnego dania 'Kleftiko' (wolno pieczona jagnięcina w glinianym piecu)." }
+      }
+    },
+    {
+      "day_number": 4,
+      "date": "2025-10-19",
+      "day_name": "Niedziela",
+      "title": "Podróż w czasie i serce gór",
+      "day_theme": "Zmiana scenerii: od historii starożytnej po górskie krajobrazy",
+      "summary": {
+        "overview": "To dzień przejściowy, w którym porzucacie wybrzeże na rzecz chłodniejszego, górskiego klimatu Troodos. Po drodze cofniecie się w czasie o 9000 lat, odwiedzając prehistoryczną osadę Choirokoitia. Celem dnia jest dotarcie do nowej bazy w Kakopetrii i aklimatyzacja w zupełnie innym otoczeniu.",
+        "logistics": "Dzień z umiarkowaną ilością jazdy, ale o zmiennym charakterze. Początkowo autostrada, później kręte, górskie drogi, które wymagają większej koncentracji. Warto zatankować samochód przed wyruszeniem w góry, gdzie stacje benzynowe są rzadsze."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "110 km",
+        "total_driving_time": "2h 15min",
+        "description": "Przejazd z Larnaki w głąb lądu. Drogi są dobrej jakości, ale w górach stają się węższe i bardziej kręte. Widoki po drodze wynagradzają wolniejsze tempo jazdy.",
+        "parking_spots": [ "Bezpłatny parking przy Choirokoitia", "Parking hotelowy lub publiczny w Kakopetrii" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "09:30",
+          "title": "Wykwaterowanie i wyjazd z Larnaki",
+          "description": "Po śniadaniu wykwaterowanie z hotelu i rozpoczęcie podróży w kierunku serca wyspy – malowniczych gór Troodos.",
+          "tags": ["transport", "logistyka"],
+          "duration": "30min",
+          "location": { "name": "Baza w Larnace", "distance": "0 km od bazy", "coordinates": null },
+          "details": null, "tips": [], "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "10:00",
+          "from": "Larnaka",
+          "to": "Choirokoitia",
+          "duration": "0h 30min",
+          "distance": "34 km",
+          "description": "Szybki przejazd autostradą A1 w kierunku Limassol.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "10:30",
+          "title": "Wizyta w Choirokoitia (UNESCO)",
+          "description": "Zwiedzanie neolitycznej osady wpisanej na listę dziedzictwa UNESCO. To jedno z najważniejszych stanowisk prehistorycznych we wschodniej części Morza Śródziemnego, pozwalające przenieść się w czasie i zobaczyć rekonstrukcje okrągłych domów sprzed 9000 lat.",
+          "tags": ["zwiedzanie", "historia starożytna", "archeologia", "unesco", "fotografia"],
+          "duration": "2h 0min",
+          "location": { "name": "Choirokoitia Neolithic Settlement", "distance": "34 km od bazy", "coordinates": { "lat": 34.7981, "lng": 33.3422 } },
+          "details": { "cost": "2.50 EUR/os", "difficulty": "średnie", "opening_hours": "08:30-17:00" },
+          "tips": [
+            "Koniecznie wejdź na szczyt wzgórza, skąd roztacza się panoramiczny widok na całą osadę i otaczający ją krajobraz.",
+            "W upalny dzień przydadzą się nakrycia głowy i woda - teren jest w większości odkryty."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "13:30",
+          "from": "Choirokoitia",
+          "to": "Kakopetria",
+          "duration": "1h 15min",
+          "distance": "75 km",
+          "description": "Malownicza podróż w głąb lądu. Drogi stają się coraz węższe i bardziej kręte, odsłaniając piękne, górskie krajobrazy.",
+          "points_of_interest": [
+            {
+              "name": "Wioska Kato Drys",
+              "description": "Warto zatrzymać się tu na lunch. To urokliwa, tradycyjna wioska z kamienną architekturą, leżąca blisko słynnej Lefkary."
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "time": "14:45",
+          "title": "Zakwaterowanie i spacer po Kakopetrii",
+          "description": "Zameldowanie w klimatycznym, tradycyjnym hotelu. Czas na odpoczynek i pierwszy spacer po kamiennych uliczkach starej części miejscowości (Palia Kakopetria), aby poczuć unikalny klimat gór Troodos.",
+          "tags": ["nocleg", "relaks", "natura", "architektura"],
+          "duration": "2h 0min",
+          "location": { "name": "Kakopetria", "distance": "75 km od bazy", "coordinates": { "lat": 34.9922, "lng": 32.9061 } },
+          "details": null,
+          "tips": [
+            "Wybór noclegu w tradycyjnym, odrestaurowanym domu może być wspaniałym doświadczeniem kulturowym.",
+            "Wieczory w górach w październiku mogą być chłodne, warto zabrać cieplejsze ubrania."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Ostatnie śniadanie w Larnace." },
+        "lunch": { "place": "Tawerna w wiosce Kato Drys", "description": "Podczas przejazdu do Troodos warto zatrzymać się w tej urokliwej wiosce (blisko Lefkary) na autentyczny, domowy lunch w jednej z małych tawern." },
+        "dinner": { "place": "The Mill Restaurant w Kakopetrii", "description": "Na pierwszą kolację w górach polecamy restaurację z nowoczesnym podejściem do cypryjskiej kuchni, często serwującą lokalnego pstrąga i dania z grzybami." }
+      }
+    },
+    {
+      "day_number": 5,
+      "date": "2025-10-20",
+      "day_name": "Poniedziałek",
+      "title": "Skarby gór Troodos",
+      "day_theme": "Dzień wyboru: trekking i natura lub kultura i wino",
+      "summary": {
+        "overview": "Ten dzień w całości poświęcony jest na odkrywanie uroków gór Troodos. Plan jest elastyczny: można postawić na aktywność fizyczną i trekking po górskich szlakach, albo skupić się na dziedzictwie kulturowym regionu – malowanych cerkwiach UNESCO i tradycyjnych wioskach winiarskich. Dzień kończy się powrotem do bazy w Kakopetrii.",
+        "logistics": "Dzień z umiarkowaną ilością jazdy po krętych, górskich drogach. Kluczowa jest świadoma decyzja podczas wizyty w Omodos: jedna osoba musi być wyznaczonym kierowcą, aby bezpiecznie wrócić do bazy. Alternatywnie, można skupić się na zakupie win na wynos, by cieszyć się nimi wieczorem w hotelu."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "90 km",
+        "total_driving_time": "2h 20min",
+        "description": "Jazda wyłącznie po wymagających, górskich drogach. Wymaga to więcej czasu i koncentracji, ale jest częścią przygody.",
+        "parking_spots": [ "Parking przy szlakach turystycznych", "Duży parking na wjeździe do Omodos" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "09:30",
+          "title": "Główna opcja: Trekking do wodospadów Caledonia",
+          "description": "Orzeźwiający, leśny spacer wzdłuż potoku Kryos Potamos, prowadzący do malowniczego, 12-metrowego wodospadu Caledonia. Szlak oferuje wytchnienie od słońca i bliski kontakt z naturą.",
+          "tags": ["trekking", "natura", "sport", "przygoda", "fotografia"],
+          "duration": "2h 0min",
+          "location": { "name": "Caledonia Falls Trail (start w Platres)", "distance": "22 km od bazy", "coordinates": { "lat": 34.891, "lng": 32.863 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "średnie" },
+          "tips": [ "Szlak bywa śliski z powodu wilgoci i kamieni, dlatego konieczne są buty z dobrą przyczepnością." ],
+          "alternatives": [
+            {
+              "name": "Alternatywa widokowa: Artemis Trail wokół Olimpu",
+              "reason": "Jeśli priorytetem są panoramiczne widoki, ten łatwy, 7-kilometrowy szlak wokół najwyższego szczytu Cypru jest bezkonkurencyjny. Oferuje zapierające dech w piersiach widoki na całą wyspę, których nie doświadczycie w niższych partiach gór. To świetna opcja dla miłośników fotografii krajobrazowej."
+            }
+          ]
+        },
+        {
+          "type": "travel",
+          "time": "12:00",
+          "from": "Platres",
+          "to": "Omodos",
+          "duration": "0h 30min",
+          "distance": "18 km",
+          "description": "Przejazd przez serce regionu winiarskiego Krasochoria. Drogi są kręte, ale widoki na winnice i wioski są przepiękne.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "12:30",
+          "title": "Spacer i odkrywanie smaków w Omodos",
+          "description": "Wizyta w jednej z najpiękniejszych wiosek na Cyprze, będącej sercem regionu winiarskiego. Czas na spacer po brukowanych uliczkach i wizytę w zabytkowym klasztorze. UWAGA: Jeśli planujecie degustację wina, jedna osoba musi pozostać trzeźwa, aby bezpiecznie wrócić samochodem do bazy.",
+          "tags": ["zwiedzanie", "kuchnia lokalna", "wino", "romantyczne", "zakupy"],
+          "duration": "3h 0min",
+          "location": { "name": "Omodos", "distance": "42 km od bazy", "coordinates": { "lat": 34.8464, "lng": 32.8083 } },
+          "details": { "cost": "Degustacja ~5-10 EUR/os", "difficulty": "łatwe" },
+          "tips": [
+            "Bezpieczna opcja: Zamiast degustacji na miejscu, kupcie butelkę lokalnego wina (np. Xynisteri lub Maratheftiko), aby cieszyć się nią wieczorem w hotelu.",
+            "Spróbujcie lokalnych wypieków 'arkatena' - chlebków ciecierzycowych."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Górskie śniadanie z lokalnymi produktami, takimi jak ser halloumi, oliwki i miód." },
+        "lunch": { "place": "Tawerna w Omodos", "description": "Lunch w jednej z tawern przy głównym placu Omodos. To dobre miejsce na spróbowanie musaki lub dań z grilla." },
+        "dinner": { "place": "Restauracja w Kakopetrii", "description": "Po powrocie z Omodos i bezpiecznym zaparkowaniu samochodu, zjedzcie kolację w Waszej wiosce. Możecie wtedy otworzyć butelkę wina kupioną w Omodos." }
+      }
+    },
+    {
+      "day_number": 6,
+      "date": "2025-10-21",
+      "day_name": "Wtorek",
+      "title": "Z gór nad morze przez antyczny teatr",
+      "day_theme": "Pożegnanie z górami i podróż do antycznej stolicy Cypru",
+      "summary": {
+        "overview": "Dzień zmiany bazy z górskiej na nadmorską. Pożegnanie z chłodnym klimatem Troodos i przejazd na zachodnie wybrzeże. Główną atrakcją po drodze jest wizyta w Kourionie – jednym z najbardziej spektakularnych stanowisk archeologicznych na wyspie. Wieczór to już relaks w nowej bazie – Pafos.",
+        "logistics": "Logistycznie to prosty dzień – głównie przejazd samochodem z punktu A do B. Droga z gór jest malownicza, a dalej prowadzi wygodną autostradą. Warto zaplanować więcej czasu na Kourion, ponieważ teren jest rozległy i wciągający."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "115 km",
+        "total_driving_time": "2h 15min",
+        "description": "Zjazd z górskich dróg na nadmorską autostradę. Trasa jest widokowa i komfortowa. Po dotarciu do Pafos poruszanie się po mieście jest proste.",
+        "parking_spots": [ "Duży, bezpłatny parking przy Kourionie", "Parking hotelowy lub publiczny w Pafos" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Wykwaterowanie i wyjazd z Kakopetrii",
+          "description": "Spokojne śniadanie z widokiem na góry, wykwaterowanie i początek podróży w kierunku Pafos.",
+          "tags": ["transport", "logistyka"],
+          "duration": "30min",
+          "location": { "name": "Baza w Kakopetrii", "distance": "0 km od bazy", "coordinates": null },
+          "details": null, "tips": [], "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "10:30",
+          "from": "Kakopetria",
+          "to": "Kourion",
+          "duration": "1h 15min",
+          "distance": "68 km",
+          "description": "Malowniczy zjazd z gór Troodos w kierunku wybrzeża i autostrady A6.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "11:45",
+          "title": "Zwiedzanie starożytnego Kourionu",
+          "description": "Wizyta w imponującym parku archeologicznym, którego perłą jest doskonale zachowany grecko-rzymski amfiteatr z zapierającym dech w piersiach widokiem na morze. To niezwykłe połączenie historii, kultury i natury.",
+          "tags": ["zwiedzanie", "historia starożytna", "archeologia", "unesco", "fotografia", "widoki"],
+          "duration": "2h 30min",
+          "location": { "name": "Ancient Kourion", "distance": "68 km od bazy", "coordinates": { "lat": 34.6675, "lng": 32.8881 } },
+          "details": { "cost": "4.50 EUR/os", "difficulty": "łatwe", "opening_hours": "08:30-17:00" },
+          "tips": [
+            "Nie przegapcie Domu Eustoliosa z pięknymi, wczesnochrześcijańskimi mozaikami.",
+            "Warto podjechać też kilka kilometrów dalej do pobliskiego Sanktuarium Apollina Hylatesa."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "15:15",
+          "from": "Kourion",
+          "to": "Baza w Pafos",
+          "duration": "0h 45min",
+          "distance": "47 km",
+          "description": "Szybki i wygodny przejazd autostradą A6 prosto do Pafos.",
+          "points_of_interest": [
+            {
+              "name": "Skała Afrodyty (Petra tou Romiou)",
+              "description": "Będziecie przejeżdżać tuż obok. Jeśli macie siłę, możecie zatrzymać się tu na chwilę już teraz, choć plan przewiduje na to osobny dzień."
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "time": "16:00",
+          "title": "Zakwaterowanie w Pafos",
+          "description": "Zameldowanie w hotelu w rejonie Grobowców Królów. To będzie baza wypadowa na drugą połowę pobytu, oferująca bliskość zarówno zabytków, jak i natury.",
+          "tags": ["nocleg", "relaks"],
+          "duration": "1h 30min",
+          "location": { "name": "Rejon Grobowców Królów, Pafos", "distance": "47 km od bazy", "coordinates": { "lat": 34.775, "lng": 32.406 } },
+          "details": null, "tips": [], "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Ostatnie górskie śniadanie." },
+        "lunch": { "place": "Chris Blue Beach Restaurant", "description": "Po zwiedzaniu Kourionu warto zjeść lunch w tej restauracji położonej tuż przy plaży pod klifem. Specjalnością są grillowane halloumi i świeże sałatki z widokiem na morze." },
+        "dinner": { "place": "Hondros Tavern", "description": "Wizyta w najstarszej tawernie w Pafos to świetny sposób na rozpoczęcie pobytu w tym mieście. Słynie z tradycyjnych dań z grilla, zwłaszcza souvli." }
+      }
+    },
+    {
+      "day_number": 7,
+      "date": "2025-10-22",
+      "day_name": "Środa",
+      "title": "Starożytne cuda Pafos",
+      "day_theme": "Podróż w czasie przez rzymskie wille i mitologiczne mozaiki",
+      "summary": {
+        "overview": "Dzień w całości poświęcony na odkrywanie archeologicznych skarbów Pafos, które jako całość zostały wpisane na listę UNESCO. Głównym celem jest Park Archeologiczny Kato Pafos, gdzie można podziwiać jedne z najlepiej zachowanych rzymskich mozaik na świecie. Popołudnie to czas na złapanie oddechu i odkrycie bardziej lokalnego oblicza miasta w jego starszej części, Ktimie.",
+        "logistics": "To dzień z minimalną ilością jazdy. Do Parku Archeologicznego i Starego Miasta można podjechać samochodem w kilka minut. Teren parku archeologicznego jest bardzo rozległy, dlatego kluczowe jest zabranie wody, nakryć głowy i wygodnych butów."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "10 km",
+        "total_driving_time": "0h 30min",
+        "description": "Głównie poruszanie się po samym Pafos. Samochód skraca czas dojazdów między atrakcjami i ułatwia powrót do bazy.",
+        "parking_spots": [ "Duży, darmowy parking przy Parku Archeologicznym", "Parkingi miejskie na Starym Mieście (Ktima)" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Zwiedzanie Parku Archeologicznego Kato Pafos",
+          "description": "Spacer po rozległym terenie parku, którego największą atrakcją są wspaniale zachowane rzymskie mozaiki podłogowe w willach Aiona, Tezeusza i Dionizosa. Przedstawiają one sceny z mitologii greckiej z niezwykłą precyzją i kunsztem. To prawdziwa uczta dla miłośników sztuki i historii.",
+          "tags": ["zwiedzanie", "historia starożytna", "sztuka rzymska", "archeologia", "unesco", "fotografia"],
+          "duration": "3h 30min",
+          "location": { "name": "Kato Paphos Archaeological Park", "distance": "3 km od bazy", "coordinates": { "lat": 34.757, "lng": 32.405 } },
+          "details": { "cost": "4.50 EUR/os", "difficulty": "łatwe", "opening_hours": "08:30-17:00" },
+          "tips": [
+            "Zacznijcie od Domu Dionizosa, aby zobaczyć najsłynniejsze mozaiki. Nie przegapcie też Odeonu i ruin zamku Saranda Kolones.",
+            "Warto kupić bilet łączony, który może obejmować także Grobowce Królów, jeśli planujecie je odwiedzić."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "15:30",
+          "from": "Park Archeologiczny",
+          "to": "Stare Miasto (Ktima)",
+          "duration": "0h 10min",
+          "distance": "3 km",
+          "description": "Krótki podjazd samochodem z dolnej, turystycznej części Pafos do wyżej położonego, lokalnego centrum.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "15:40",
+          "title": "Relaks i kawa na Starym Mieście (Ktima)",
+          "description": "Po intensywnym zwiedzaniu, czas na odpoczynek w wyżej położonej, bardziej lokalnej części Pafos. Ktima oferuje urokliwe uliczki, sklepiki z rzemiosłem, galerie sztuki i klimatyczne kawiarnie z pięknym widokiem na dolne miasto i morze.",
+          "tags": ["relaks", "miasto", "kuchnia lokalna", "zakupy", "sztuka"],
+          "duration": "2h 0min",
+          "location": { "name": "Paphos Old Town (Ktima)", "distance": "3 km od bazy", "coordinates": { "lat": 34.776, "lng": 32.423 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [
+            "Warto poszukać punktów widokowych, z których roztacza się panorama na Kato Pafos.",
+            "Na Starym Mieście znajduje się hala targowa (agora), gdzie można kupić lokalne produkty i pamiątki."
+          ],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Śniadanie przed dniem pełnym historii." },
+        "lunch": { "place": "Pingouino Cafe Lounge Bar", "description": "Położona tuż przy wejściu do Parku Archeologicznego kawiarnia to idealne miejsce na regenerację. Serwują lekkie lunche, sałatki, wrapy i orzeźwiające napoje." },
+        "dinner": { "place": "Koutourou Ouzeri", "description": "Ukryta w uliczkach Starego Miasta restauracja bez stałej karty. Menu zmienia się codziennie i jest wypisane na tablicy. To miejsce oferuje kreatywne meze w nowoczesnym wydaniu w tętniącej życiem, lokalnej atmosferze." }
+      }
+    },
+    {
+      "day_number": 8,
+      "date": "2025-10-23",
+      "day_name": "Czwartek",
+      "title": "Grobowce Królów i chwila oddechu",
+      "day_theme": "Dzień wyboru: historia i zorganizowany relaks lub dzika przyroda",
+      "summary": {
+        "overview": "Dzień zaczyna się od eksploracji kolejnego cudu archeologicznego Pafos – monumentalnych Grobowców Królów. Popołudnie to czas na zasłużony odpoczynek. Główny plan zakłada relaks na popularnej, piaszczystej plaży Coral Bay. Alternatywa to wyprawa na dziką i chronioną plażę Lara, miejsce lęgowe żółwi, oferujące zupełnie inne, bardziej surowe doświadczenie.",
+        "logistics": "Logistycznie dzień jest prosty. Grobowce Królów są tuż przy Waszej bazie. Wybór popołudniowej aktywności determinuje charakter jazdy: krótki i łatwy dojazd do Coral Bay lub dłuższa, bardziej wymagająca trasa po szutrowej drodze na plażę Lara. Warto sprawdzić w wypożyczalni, czy ubezpieczenie obejmuje jazdę po takich drogach."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "25 km (Coral Bay) lub 55 km (Lara Beach)",
+        "total_driving_time": "0h 45min (Coral Bay) lub 1h 45min (Lara Beach)",
+        "description": "Krótki przejazd do Grobowców. Następnie albo łatwa droga asfaltowa do Coral Bay, albo przygodowa jazda po drodze szutrowej do Lara Beach.",
+        "parking_spots": [ "Bezpłatny parking przy Grobowcach Królów", "Parking przy plaży Coral Bay", "Nieformalny parking przy Lara Beach" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Eksploracja Grobowców Królów",
+          "description": "Zwiedzanie imponującej nekropolii z grobowcami wykutymi w litej skale, datowanymi na okres od IV w. p.n.e. Mimo nazwy, chowano tu lokalnych arystokratów. Rozległy kompleks z dziedzińcami i kolumnami robi ogromne wrażenie i zachęca do eksploracji.",
+          "tags": ["zwiedzanie", "historia starożytna", "archeologia", "unesco", "fotografia"],
+          "duration": "2h 30min",
+          "location": { "name": "Tombs of the Kings", "distance": "1 km od bazy", "coordinates": { "lat": 34.775, "lng": 32.406 } },
+          "details": { "cost": "2.50 EUR/os", "difficulty": "łatwe", "opening_hours": "08:30-17:00" },
+          "tips": [
+            "Można wejść do wnętrza wielu grobowców, co jest niezwykłym doświadczeniem. Największe z nich przypominają podziemne wille.",
+            "Wasza baza noclegowa jest tak blisko, że można tu nawet podejść spacerem."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "13:30",
+          "from": "Grobowce Królów",
+          "to": "Coral Bay (lub Lara Beach)",
+          "duration": "0h 20min",
+          "distance": "11 km",
+          "description": "Krótki i przyjemny przejazd wzdłuż wybrzeża do popularnego kurortu.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "13:50",
+          "title": "Główna opcja: Relaks na plaży Coral Bay",
+          "description": "Popołudnie można spędzić na jednej z najpopularniejszych piaszczystych plaż w regionie. Coral Bay oferuje łagodne zejście do morza, dobrą infrastrukturę (leżaki, bary) i jest idealna na beztroski wypoczynek.",
+          "tags": ["relaks", "plaża", "pływanie", "romantyczne"],
+          "duration": "4h 0min",
+          "location": { "name": "Coral Bay", "distance": "11 km od bazy", "coordinates": { "lat": 34.855, "lng": 32.366 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [],
+          "alternatives": [
+            {
+              "name": "Alternatywa przyrodnicza: Dzika plaża Lara",
+              "reason": "Jeśli wolicie surowe piękno, ciszę i dziką przyrodę, plaża Lara jest idealnym wyborem. To chroniony rezerwat, gdzie żółwie składają jaja. Plaża jest szeroka, piaszczysta i niemal pusta. Doświadczenie jest bardziej autentyczne, ale wymaga jazdy po drodze szutrowej i rezygnacji z udogodnień."
+            }
+          ]
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Śniadanie i planowanie popołudniowego relaksu." },
+        "lunch": { "place": "Tawerna przy plaży", "description": "W zależności od wyboru: lunch w jednej z wielu tawern przy Coral Bay lub spakowany prowiant i piknik na dzikiej plaży Lara." },
+        "dinner": { "place": "7 St. Georges Tavern", "description": "Wieczorem warto odwiedzić tę legendarną tawernę. Nie ma tu menu – serwowane jest sezonowe meze oparte na produktach z własnego gospodarstwa. To prawdziwe, kulinarne doświadczenie 'farm-to-table'. Konieczna rezerwacja." }
+      }
+    },
+    {
+      "day_number": 9,
+      "date": "2025-10-24",
+      "day_name": "Piątek",
+      "title": "Przygoda w Wąwozie Avakas",
+      "day_theme": "Aktywny dzień w sercu dzikiej przyrody Półwyspu Akamas",
+      "summary": {
+        "overview": "To dzień dla miłośników przyrody i aktywnego spędzania czasu. Głównym celem jest trekking przez Wąwóz Avakas – jeden z najbardziej spektakularnych cudów natury na Cyprze. Wędrówka dnem wąwozu, którego ściany wznoszą się na 30 metrów, to niezapomniane przeżycie i wyzwanie. Popołudnie to czas na regenerację w spokojnej, rybackiej osadzie.",
+        "logistics": "Kluczowe jest sprawdzenie prognozy pogody – po deszczu szlak może być niebezpieczny. Niezbędne są dobre, nieprzemakalne buty. Dojazd do początku szlaku prowadzi drogą szutrową; należy jechać ostrożnie. Warto mieć plan B na wypadek złej pogody."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "45 km",
+        "total_driving_time": "1h 30min",
+        "description": "Dojazd do wąwozu częściowo prowadzi drogą szutrową. Wymaga to wolniejszej i ostrożniejszej jazdy. Wyjazd z bazy w rejonie Grobowców Królów ułatwia i skraca dojazd.",
+        "parking_spots": [ "Parking na początku szlaku do Wąwozu Avakas", "Parking w Agios Georgios" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Trekking przez Wąwóz Avakas",
+          "description": "Wyprawa do serca Półwyspu Akamas. Wędrówka dnem wąwozu, którego wapienne ściany tworzą niesamowite formacje skalne. Szlak prowadzi korytem strumienia, co dodaje przygodzie charakteru. To wyzwanie dla aktywnych i raj dla fotografów przyrody.",
+          "tags": ["trekking", "natura", "przygoda", "sport", "fotografia", "widoki"],
+          "duration": "3h 30min",
+          "location": { "name": "Avakas Gorge", "distance": "18 km od bazy", "coordinates": { "lat": 34.908, "lng": 32.338 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "trudne" },
+          "tips": [
+            "Konieczne są solidne, nieprzemakalne buty trekkingowe - część trasy prowadzi po śliskich kamieniach w wodzie.",
+            "Zabierzcie co najmniej 1.5 litra wody na osobę i wysokoenergetyczne przekąski."
+          ],
+          "alternatives": [
+            {
+              "name": "Plan B: Eksploracja wybrzeża Akamas na quadach",
+              "reason": "Jeśli pogoda uniemożliwia trekking w wąwozie, świetną alternatywą jest wynajęcie quada w pobliskiej miejscowości Peja i eksploracja szutrowych dróg półwyspu, prowadzących do ukrytych zatoczek i punktów widokowych."
+            }
+          ]
+        },
+        {
+          "type": "travel",
+          "time": "14:30",
+          "from": "Wąwóz Avakas",
+          "to": "Agios Georgios Pegeias",
+          "duration": "0h 20min",
+          "distance": "5 km",
+          "description": "Krótki przejazd po szutrowej, a następnie asfaltowej drodze do pobliskiej osady rybackiej.",
+          "points_of_interest": [
+            {
+              "name": "Wrak statku Edro III",
+              "description": "Po drodze miniecie imponujący wrak statku handlowego osiadłego na mieliźnie blisko brzegu. Warto zatrzymać się na 5 minut, aby zrobić zdjęcie."
+            }
+          ]
+        },
+        {
+          "type": "activity",
+          "time": "14:50",
+          "title": "Odpoczynek w Agios Georgios Pegeias",
+          "description": "Po wymagającym trekkingu, chwila relaksu w małej, spokojnej osadzie rybackiej z urokliwym portem i kościółkiem na klifie. To idealne miejsce na regenerację sił, późny lunch i podziwianie widoków na morze oraz wyspę Geronisos.",
+          "tags": ["relaks", "natura", "kuchnia lokalna", "widoki"],
+          "duration": "2h 0min",
+          "location": { "name": "Agios Georgios Pegeias", "distance": "14 km od bazy", "coordinates": { "lat": 34.89, "lng": 32.34 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [],
+          "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Dobre, energetyczne śniadanie przed trekkingiem." },
+        "lunch": { "place": "Tawerna rybna w Agios Georgios", "description": "Po wysiłku fizycznym nic nie smakuje lepiej niż świeżo złowiona ryba dnia z grilla w jednej z tawern z widokiem na port." },
+        "dinner": { "place": "Laona Restaurant", "description": "Powrót na Stare Miasto w Pafos do restauracji serwującej tradycyjną, domową kuchnię. Menu wypisane na tablicy gwarantuje świeżość i autentyczność. Konieczna rezerwacja." }
+      }
+    },
+    {
+      "day_number": 10,
+      "date": "2025-10-25",
+      "day_name": "Sobota",
+      "title": "Mityczne wybrzeże i Błękitna Laguna",
+      "day_theme": "Relaks, mitologia i kąpiel w krystalicznie czystej wodzie",
+      "summary": {
+        "overview": "Dzień poświęcony na odkrywanie północnej, dzikiej części Półwyspu Akamas. Zaczyna się od wizyty w mitycznych Łaźniach Afrodyty i krótkiego spaceru z panoramicznymi widokami. Punktem kulminacyjnym dnia jest rejs do Błękitnej Laguny. Po pełnym wrażeń dniu powrót do Pafos, aby tam, po zaparkowaniu samochodu, zjeść kolację.",
+        "logistics": "Dzień wymaga dłuższego dojazdu samochodem na północny skraj półwyspu. W porcie Latsi kluczowe jest wybranie odpowiedniej formy rejsu. Najważniejsza zmiana logistyczna to decyzja o powrocie do Pafos na kolację, co gwarantuje bezpieczeństwo."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "85 km",
+        "total_driving_time": "2h 15min",
+        "description": "Dłuższy przejazd z Pafos do Latsi malowniczymi drogami. Jazda jest przyjemna, ale zajmuje trochę czasu.",
+        "parking_spots": [ "Bezpłatny parking przy Łaźniach Afrodyty", "Duży, bezpłatny parking w porcie Latsi" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Wizyta w Łaźniach Afrodyty i spacer Szlakiem Afrodyty",
+          "description": "Wizyta w mitycznej grocie, gdzie kąpała się bogini miłości, a następnie krótki, ale stromy spacer fragmentem Szlaku Afrodyty. Już po kilkunastu minutach podejścia roztaczają się zapierające dech w piersiach widoki na zatokę i całe wybrzeże Akamas.",
+          "tags": ["zwiedzanie", "natura", "mitologia", "romantyczne", "widoki", "fotografia"],
+          "duration": "2h 0min",
+          "location": { "name": "Baths of Aphrodite", "distance": "42 km od bazy", "coordinates": { "lat": 35.056, "lng": 32.346 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "średnie" },
+          "tips": [
+            "Nawet krótki, 20-minutowy spacer pod górę wynagradza niesamowitymi widokami. Nie trzeba przechodzić całego szlaku.",
+            "Obok Łaźni Afrodyty znajduje się niewielki ogród botaniczny."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "12:00",
+          "from": "Łaźnie Afrodyty",
+          "to": "Port w Latsi",
+          "duration": "0h 10min",
+          "distance": "5 km",
+          "description": "Krótki zjazd z powrotem do nadmorskiej miejscowości Latsi.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "13:30",
+          "title": "Rejs do Błękitnej Laguny z Latsi",
+          "description": "Popołudniowy rejs statkiem z portu w Latsi do słynnej Błękitnej Laguny. Główną atrakcją jest postój na pływanie i snorkeling w krystalicznie czystej, turkusowej wodzie. To doskonałe połączenie relaksu, aktywności i podziwiania dzikiego wybrzeża Akamas od strony morza.",
+          "tags": ["rejs", "natura", "pływanie", "przygoda", "romantyczne"],
+          "duration": "3h 0min",
+          "location": { "name": "Latsi Harbour", "distance": "38 km od bazy", "coordinates": { "lat": 35.044, "lng": 32.395 } },
+          "details": { "cost": "~20 EUR/os", "booking": "zalecana", "difficulty": "łatwe" },
+          "tips": [
+            "Statki często oferują darmowe wino i owoce na pokładzie, a także udostępniają sprzęt do snorkelingu.",
+            "W porcie jest wiele firm oferujących rejsy, warto porównać oferty na miejscu."
+          ],
+          "alternatives": [
+            {
+              "name": "Alternatywa 'Kapitan i Sternik': Wynajem własnej motorówki",
+              "reason": "Daje pełną swobodę w eksplorowaniu wybrzeża we własnym tempie. Pozwala dotrzeć do mniejszych, bezludnych zatoczek i spędzić w Błękitnej Lagunie tyle czasu, ile chcecie. Nie wymaga patentu. To droższa, ale znacznie bardziej kameralna i romantyczna opcja."
+            }
+          ]
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Śniadanie przed wycieczką na północ." },
+        "lunch": { "place": "Yiannis Sandwich Place", "description": "Przed rejsem warto zjeść szybką i smaczną przekąskę w porcie Latsi. To miejsce serwuje świetne kanapki i sałatki na wynos." },
+        "dinner": { "place": "Restauracja w Pafos", "description": "Po powrocie z rejsu i zaparkowaniu samochodu, udajcie się na kolację do jednej z restauracji na Starym Mieście w Pafos, np. do polecanego wcześniej Koutourou Ouzeri." }
+      }
+    },
+    {
+      "day_number": 11,
+      "date": "2025-10-26",
+      "day_name": "Niedziela",
+      "title": "Skała Romansu i ostatnie smaki Cypru",
+      "day_theme": "Dzień wyboru: ikoniczne widoki lub wspólne doświadczenie kulinarne",
+      "summary": {
+        "overview": "Ostatni pełny dzień na Cyprze. Rano wizyta w miejscu narodzin Afrodyty – jednym z najbardziej ikonicznych i romantycznych miejsc na wyspie. Popołudnie jest elastyczne: główny plan zakłada relaks i zakupy pamiątek. Alternatywa to niezapomniane, łączące doświadczenie – warsztaty kuchni cypryjskiej. Wieczór to pożegnalna kolacja z pięknym widokiem, na którą udacie się już po zaparkowaniu samochodu.",
+        "logistics": "Logistycznie to spokojny dzień. Do Skały Afrodyty prowadzi autostrada. Jeśli zdecydujecie się na warsztaty kulinarne, wymagają one wcześniejszej rezerwacji i dojazdu do jednej z agroturystyk w okolicach Pafos."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "50 km",
+        "total_driving_time": "1h 0min",
+        "description": "Głównie przejazd autostradą do Petra tou Romiou i poruszanie się po okolicach Pafos.",
+        "parking_spots": [ "Bezpłatny parking przy Skale Afrodyty", "Parkingi miejskie w Pafos" ]
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "11:00",
+          "title": "Wizyta przy Skale Afrodyty (Petra tou Romiou)",
+          "description": "Odwiedziny w miejscu, gdzie według mitologii z morskiej piany narodziła się bogini Afrodyta. Czas na spacer po kamienistej plaży, podziwianie monumentalnych skał i zrobienie pamiątkowych zdjęć w tej ikonicznej scenerii.",
+          "tags": ["zwiedzanie", "natura", "mitologia", "romantyczne", "fotografia", "widoki"],
+          "duration": "1h 30min",
+          "location": { "name": "Petra tou Romiou", "distance": "24 km od bazy", "coordinates": { "lat": 34.663, "lng": 32.627 } },
+          "details": { "cost": "Wstęp wolny", "difficulty": "łatwe" },
+          "tips": [
+            "Najpiękniej jest tu o wschodzie lub zachodzie słońca, ale nawet w ciągu dnia miejsce robi ogromne wrażenie.",
+            "Na plażę prowadzi bezpieczny tunel pod drogą szybkiego ruchu. Nie należy przechodzić przez jezdnię."
+          ],
+          "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "12:30",
+          "from": "Skała Afrodyty",
+          "to": "Pafos",
+          "duration": "0h 30min",
+          "distance": "24 km",
+          "description": "Powrót do miasta.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "13:00",
+          "title": "Główna opcja: Czas wolny i zakupy pamiątek",
+          "description": "Ostatnie popołudnie na Cyprze. Czas na swobodny relaks, kupno pamiątek w sklepikach na Starym Mieście lub w porcie, albo po prostu delektowanie się słońcem przed podróżą.",
+          "tags": ["relaks", "zakupy", "miasto", "kuchnia lokalna"],
+          "duration": "4h 0min",
+          "location": { "name": "Paphos Harbour / Old Town", "distance": "3 km od bazy", "coordinates": { "lat": 34.755, "lng": 32.407 } },
+          "details": null,
+          "tips": [ "Warto poszukać lokalnego rzemiosła (ceramiki), oliwy z oliwek, ziół czy słodkiego wina Commandaria." ],
+          "alternatives": [
+            {
+              "name": "Alternatywa kulinarna: Warsztaty kuchni cypryjskiej",
+              "reason": "Zamiast standardowych zakupów, możecie spędzić popołudnie na nauce gotowania lokalnych specjałów, takich jak halloumi, sheftalia czy moussaka. To fantastyczne, łączące doświadczenie, które pozwoli Wam przywieźć z podróży nie tylko pamiątki, ale i nowe umiejętności. Wymaga wcześniejszej rezerwacji."
+            }
+          ]
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Ostatnie pełne śniadanie na Cyprze." },
+        "lunch": { "place": "Lokalna tawerna w Kouklia", "description": "W drodze powrotnej od Skały Afrodyty warto zatrzymać się w pobliskiej wiosce Kouklia. Znajdują się tam urokliwe, tradycyjne tawerny serwujące proste i smaczne dania." },
+        "dinner": { "place": "Muse Cafe Kitchen Bar", "description": "Idealne miejsce na pożegnalną kolację. Restauracja położona na wzgórzu w Starym Mieście oferuje nowoczesną kuchnię, świetne koktajle i, co najważniejsze, panoramiczny widok na całe Pafos i wybrzeże. Konieczna rezerwacja, poproście o stolik w pierwszym rzędzie." }
+      }
+    },
+    {
+      "day_number": 12,
+      "date": "2025-10-27",
+      "day_name": "Poniedziałek",
+      "title": "Ostatnia cypryjska kawa i powrót",
+      "day_theme": "Spokojne pożegnanie z wyspą",
+      "summary": {
+        "overview": "Dzień wylotu. Plan zakłada spokojny poranek bez pośpiechu, ostatnią kawę w klimatycznym porcie w Pafos, a następnie bezstresowy przejazd na lotnisko, zwrot samochodu i powrót do domu z głową pełną wspomnień.",
+        "logistics": "Głównym zadaniem jest punktualne dotarcie na lotnisko. Należy pamiętać o zatankowaniu samochodu przed zwrotem (zgodnie z umową) i zostawić sobie wystarczająco dużo czasu na formalności lotniskowe."
+      },
+      "transport": {
+        "main_mode": "samochód",
+        "total_distance": "20 km",
+        "total_driving_time": "0h 45min",
+        "description": "Krótki przejazd po mieście i transfer na lotnisko w Pafos.",
+        "parking_spots": []
+      },
+      "activities": [
+        {
+          "type": "activity",
+          "time": "10:00",
+          "title": "Ostatnia kawa w porcie",
+          "description": "Spokojny poranek i ostatnia cypryjska kawa w jednej z kawiarni w porcie w Pafos, by jeszcze przez chwilę nacieszyć się atmosferą miasta i słońcem.",
+          "tags": ["relaks", "miasto", "kuchnia lokalna"],
+          "duration": "1h 30min",
+          "location": { "name": "Paphos Harbour", "distance": "3 km od bazy", "coordinates": { "lat": 34.755, "lng": 32.407 } },
+          "details": null, "tips": [], "alternatives": []
+        },
+        {
+          "type": "travel",
+          "time": "12:30",
+          "from": "Pafos",
+          "to": "Lotnisko w Pafos (PFO)",
+          "duration": "0h 25min",
+          "distance": "16 km",
+          "description": "Ostatni przejazd na lotnisko.",
+          "points_of_interest": []
+        },
+        {
+          "type": "activity",
+          "time": "12:55",
+          "title": "Zwrot samochodu i odprawa",
+          "description": "Zwrot wynajętego samochodu w wypożyczalni na lotnisku, nadanie bagażu i przejście przez kontrolę bezpieczeństwa.",
+          "tags": ["transport", "logistyka"],
+          "duration": "1h 20min",
+          "location": { "name": "Paphos International Airport (PFO)", "distance": "16 km od bazy", "coordinates": { "lat": 34.718, "lng": 32.485 } },
+          "details": null,
+          "tips": [ "Upewnij się, że samochód jest zatankowany zgodnie z umową (np. do pełna), aby uniknąć dodatkowych opłat." ],
+          "alternatives": []
+        },
+        {
+          "type": "activity",
+          "time": "15:45",
+          "title": "Wylot do Warszawy",
+          "description": "Zakończenie cypryjskiej przygody i powrót do domu.",
+          "tags": ["transport"],
+          "duration": "3h 30min",
+          "location": { "name": "Paphos International Airport (PFO)", "distance": "16 km od bazy", "coordinates": { "lat": 34.718, "lng": 32.485 } },
+          "details": null, "tips": [], "alternatives": []
+        }
+      ],
+      "daily_meals": {
+        "breakfast": { "place": "W hotelu", "description": "Ostatnie śniadanie i pakowanie." },
+        "lunch": { "place": "Przekąska na lotnisku", "description": "Szybki posiłek na lotnisku przed odlotem." },
+        "dinner": { "place": "Brak (w trakcie lotu)", "description": null }
+      }
+    }
+  ]
+}
