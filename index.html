@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Planer Wycieczki Japonia-Korea</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 1em; max-width: 600px; }
+  h1 { text-align: center; }
+  form { margin-bottom: 1em; }
+  label { display: block; margin-top: 0.5em; }
+  input, textarea, button { width: 100%; padding: 0.5em; margin-top: 0.2em; }
+  ul { list-style: none; padding: 0; }
+  li { background: #f0f0f0; margin-bottom: 0.5em; padding: 0.5em; border-radius: 4px; }
+  .date { font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Planer Wycieczki Japonia-Korea</h1>
+
+<form id="activityForm">
+  <label for="date">Data (YYYY-MM-DD)</label>
+  <input type="date" id="date" name="date" required min="2025-09-09" max="2025-09-24" />
+  <label for="activity">Aktywność</label>
+  <textarea id="activity" name="activity" rows="2" required placeholder="Opis aktywności"></textarea>
+  <button type="submit">Dodaj aktywność</button>
+</form>
+
+<ul id="activitiesList"></ul>
+
+<script>
+  const form = document.getElementById('activityForm');
+  const activitiesList = document.getElementById('activitiesList');
+
+  let activities = JSON.parse(localStorage.getItem('travelActivities')) || [];
+
+  function saveActivities() {
+    localStorage.setItem('travelActivities', JSON.stringify(activities));
+  }
+
+  function renderActivities() {
+    activitiesList.innerHTML = '';
+    activities.sort((a,b) => a.date.localeCompare(b.date));
+    activities.forEach(({ date, activity }) => {
+      const li = document.createElement('li');
+      li.innerHTML = '<span class="date">' + date + '</span>: ' + activity;
+      activitiesList.appendChild(li);
+    });
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const date = form.date.value;
+    const activity = form.activity.value.trim();
+    if(date && activity) {
+      activities.push({date, activity});
+      saveActivities();
+      renderActivities();
+      form.reset();
+    }
+  });
+
+  renderActivities();
+</script>
+
+</body>
+</html>
